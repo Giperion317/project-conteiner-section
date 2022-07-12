@@ -1,0 +1,42 @@
+@media screen and (max-width:1199px){
+    .work__hiden{
+        display: none;
+    }
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.work__item {
+    flex-basis: calc((100% - 90px) / 3);
+
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.work__wrapper{
+    position: relative;
+}
+
+.work__title{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    @extend %align;
+
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondory-color);
+    background-color: rgba(47, 48, 58, 0.8);
+
+    width: 100%;
+    height: 70px;
+}
